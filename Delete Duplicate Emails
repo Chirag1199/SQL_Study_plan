@@ -37,3 +37,13 @@ Output:
 Explanation: john@example.com is repeated two times. We keep the row with the smallest Id = 1.
 
 
+Sql Queny - 
+
+# Write your MySQL query statement below
+
+Select user_id, 
+concat(
+upper(left(name,1)), 
+lower(substring(name,2))) as name
+from users
+order by user_id
